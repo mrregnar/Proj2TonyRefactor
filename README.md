@@ -1,11 +1,10 @@
-# proj2U2beMarina
-
 npm install in root of foodgridclient folder
-npm install in root of Git Clone where server.js is located
+npm install in root of server folder
 
-npm start in root of Git Clone directory (same folder as server.js)
-
-npm start in foodgridclient folder once NodeJS server is running
+First:
+npm start in server folder
+Second:
+Wait for server side to start then... npm start in foodgridclient folder
 
 Node JS server runs at http://localhost:3001
 REACT app runs at http://localhost:5000
