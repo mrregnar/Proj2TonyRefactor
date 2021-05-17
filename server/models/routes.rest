@@ -1,0 +1,17 @@
+
+GET http://localhost:3001/items
+
+###
+
+GET http://localhost:3001/
+
+###
+POST http://localhost:3001/newitem
+Content-Type: application/json
+
+ {
+    "itemName": "Peanuts",
+    "itemSize": "Large",
+    "itemQuantity": 24
+  }
+

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import axios from "axios";
-import AddItem from "./AddItem";
-import ListItems from "./ListItems";
+//import axios from "axios";
+import AddItem from "./components/AddItem";
+import ListItems from "./components/ListItems";
 
 function App() {
   const [viewMode, setViewMode] = useState("ListView");
