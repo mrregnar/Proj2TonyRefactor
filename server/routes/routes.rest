@@ -10,12 +10,22 @@ POST http://localhost:3001/newitem
 Content-Type: application/json
 
  {
-    "itemName": "Cashews",
+    "itemName": "Dream Item",
     "itemSize": "Large",
     "itemQuantity": 24
   }
 
 ###
 
-Delete http://localhost:3001/delete/60a3fec2c923ab3930b559d5
+Delete http://localhost:3001/delete/60a42204c581d1147861fb24
 
+###
+
+PUT  http://localhost:3001/update/60a446d92d7f9f15b8641a23
+Content-Type: application/json
+
+ {
+    "itemName": "Up to date",
+    "itemSize": "Large",
+    "itemQuantity": 24
+  }

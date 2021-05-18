@@ -4,9 +4,9 @@ const Item = require("../models/item");
 
 console.log("deleteItem.js has been called");
 
-router.delete("/:id", (request, response) => {
+router.delete("/:id", async (request, res) => {
   const id = request.params.id;
-  Item.findByIdAndDelete({ _id: id }, function (err) {
+  await Item.findByIdAndDelete({ _id: id }, function (err) {
     if (!err) {
       console.log("item deleted");
     } else {

@@ -25,7 +25,7 @@ function AddItem() {
       itemSize: item.itemSize,
       itemQuantity: item.itemQuantity,
     };
-    axios.post("/", newItem);
+    axios.post("/newitem", newItem); //put new item here
   }
   return (
     <div>
