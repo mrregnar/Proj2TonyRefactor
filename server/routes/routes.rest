@@ -1,0 +1,21 @@
+
+GET http://localhost:3001/
+
+###
+
+GET http://localhost:3001/items
+
+###
+POST http://localhost:3001/newitem
+Content-Type: application/json
+
+ {
+    "itemName": "Cashews",
+    "itemSize": "Large",
+    "itemQuantity": 24
+  }
+
+###
+
+Delete http://localhost:3001/delete/60a3fec2c923ab3930b559d5
+
