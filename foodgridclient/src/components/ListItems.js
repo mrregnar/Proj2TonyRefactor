@@ -21,7 +21,7 @@ function ListItems() {
   });
 
   function deleteItem(id) {
-    axios.delete("/delete/" + id);
+    axios.delete("/items/" + id);
     alert("item deleted");
   }
 

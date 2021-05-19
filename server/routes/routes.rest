@@ -3,29 +3,58 @@ GET http://localhost:3001/
 
 ###
 
-GET http://localhost:3001/items
+GET http://localhost:3001/users
 
 ###
-POST http://localhost:3001/newitem
+POST http://localhost:3001/items/
 Content-Type: application/json
 
  {
-    "itemName": "Dream Item",
+    "itemName": "Blue Team",
     "itemSize": "Large",
     "itemQuantity": 24
   }
 
 ###
 
-Delete http://localhost:3001/delete/60a42204c581d1147861fb24
+Delete http://localhost:3001/users/60a452c63f4ecb28848332a7
 
 ###
 
-PUT  http://localhost:3001/update/60a446d92d7f9f15b8641a23
+PUT  http://localhost:3001/items/60a446d92d7f9f15b8641a23
 Content-Type: application/json
 
  {
-    "itemName": "Up to date",
+    "itemName": "Not required",
     "itemSize": "Large",
     "itemQuantity": 24
+  }
+
+
+###
+
+POST  http://localhost:3001/users/
+Content-Type: application/json
+
+ {
+    "userName": "Blue",
+    "email": "Large",
+    "password": "YoY1122",
+    "phoneNumber": "9555555555",
+    "communityName": "Falconridge",
+    "contactMethod": "phone"
+  }
+
+###
+
+PUT  http://localhost:3001/users/60a452c63f4ecb28848332a7
+Content-Type: application/json
+
+ {
+    "userName": "OraNGE",
+    "email": "Large",
+    "password": "YoY1122",
+    "phoneNumber": "9555555555",
+    "communityName": "Falconridge",
+    "contactMethod": "phone"
   }
