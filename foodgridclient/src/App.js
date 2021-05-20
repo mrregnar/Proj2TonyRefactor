@@ -19,11 +19,21 @@ function App() {
             backgroundColor: "lightblue",
           }}
         >
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/register">UserRegistration</Link>
-          <Link to="/listitems">ListItems</Link>
-          <Link to="/additem">AddItem</Link>
+          <Link to="/" style={{ margin: 10 }}>
+            Home
+          </Link>
+          <Link to="/login" style={{ margin: 10 }}>
+            Login
+          </Link>
+          <Link to="/register" style={{ margin: 10 }}>
+            UserRegistration
+          </Link>
+          <Link to="/listitems" style={{ margin: 10 }}>
+            ListItems
+          </Link>
+          <Link to="/additem" style={{ margin: 10 }}>
+            AddItem
+          </Link>
         </div>
         <Switch>
           <Route path="/" exact component={Home} />
