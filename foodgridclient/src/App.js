@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //import axios from "axios";
+import Login from "./components/Login";
 import AddItem from "./components/AddItem";
+import UserRegistration from "./components/UserRegistration";
 import ListItems from "./components/ListItems";
 import Home from "./components/Home";
 
@@ -18,11 +20,15 @@ function App() {
           }}
         >
           <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/register">UserRegistration</Link>
           <Link to="/listitems">ListItems</Link>
           <Link to="/additem">AddItem</Link>
         </div>
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/login" exact component={Login} />
+          <Route path="/register" exact component={UserRegistration} />
           <Route path="/listitems" exact component={ListItems} />
           <Route path="/additem" exact component={AddItem} />
         </Switch>
