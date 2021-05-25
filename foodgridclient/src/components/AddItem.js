@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "./AddItem.css";
 
 function AddItem() {
   const [item, setItem] = useState({
@@ -28,34 +29,46 @@ function AddItem() {
     axios.post("/items", newItem); //put new item here
   }
   return (
-    <div>
+    <div class="AddItem-box">
       <h2>Add Item</h2>
       <form>
-        <label htmlFor="itemName">Name</label>
-        <input
-          onChange={handleChange}
-          name="itemName"
-          placeholder="item name"
-          value={item.itemName}
-          type="text"
-        ></input>
-        <label htmlFor="itemSize">Size</label>
-        <input
-          onChange={handleChange}
-          name="itemSize"
-          placeholder="item size"
-          value={item.itemSize}
-          type="text"
-        ></input>
-        <label htmlFor="itemQuantity">Quantity</label>
-        <input
-          onChange={handleChange}
-          name="itemQuantity"
-          placeholder="item quantity"
-          value={item.itemQuantity}
-          type="number"
-        ></input>
-        <br /> <button onClick={addItem}>ADD ITEM</button>
+        <div class="User-box">
+          <input
+            onChange={handleChange}
+            name="itemName"
+            placeholder="item name"
+            value={item.itemName}
+            type="text"
+          ></input>
+          <label htmlFor="itemName">Name</label>
+        </div>
+        <div class="User-box">
+          <input
+            onChange={handleChange}
+            name="itemSize"
+            placeholder="item size"
+            value={item.itemSize}
+            type="text"
+          ></input>
+          <label htmlFor="itemSize">Size</label>
+        </div>
+        <div class="User-box">
+          <input
+            onChange={handleChange}
+            name="itemQuantity"
+            placeholder="item quantity"
+            value={item.itemQuantity}
+            type="number"
+          ></input>
+          <label htmlFor="itemQuantity">Quantity</label>
+        </div>
+        <a onClick={addItem}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
       </form>
     </div>
   );

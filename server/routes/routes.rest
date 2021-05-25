@@ -1,5 +1,5 @@
 
-GET http://localhost:3001/
+GET http://localhost:3001/items
 
 ###
 
@@ -37,11 +37,11 @@ POST  http://localhost:3001/users/
 Content-Type: application/json
 
  {
-    "userName": "Blue",
-    "email": "Large",
+    "userName": "Billy Brute",
+    "email": "notmyemail@login.com",
     "password": "YoY1122",
     "phoneNumber": "9555555555",
-    "communityName": "Falconridge",
+    "communityName": "Castleridge",
     "contactMethod": "phone"
   }
 

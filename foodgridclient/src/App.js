@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 //import axios from "axios";
 import Login from "./components/Login";
 import AddItem from "./components/AddItem";
-import UserRegistration from "./components/UserRegistration";
+import UserRegistration from "./components/AddUser";
 import ListItems from "./components/ListItems";
 import Home from "./components/Home";
 
@@ -13,20 +13,21 @@ function App() {
     <>
       <Router>
         <div
-          style={{
-            width: 100 + "vm",
-            height: 80,
-            backgroundColor: "lightblue",
-          }}
+          class="NavBar"
+          // style={{
+          //   width: 100 + "vm",
+          //   height: 80,
+          //   backgroundColor: "lightblue",
+          // }}
         >
-          <Link to="/" style={{ margin: 10 }}>
+          <Link class="Link" to="/" style={{ margin: 10 }}>
             Home
           </Link>
           <Link to="/login" style={{ margin: 10 }}>
             Login
           </Link>
           <Link to="/register" style={{ margin: 10 }}>
-            UserRegistration
+            Sign Up
           </Link>
           <Link to="/listitems" style={{ margin: 10 }}>
             ListItems

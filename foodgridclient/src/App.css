@@ -1,3 +1,14 @@
+.Link {
+  width: 20px;
+  height: 10px;
+}
+
+.NavBar {
+  width: 100px + "vm";
+  height: 40px;
+  background-color: rgb(185, 190, 151);
+}
+
 .App {
   text-align: center;
 }
@@ -25,7 +36,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #e921df;
 }
 
 @keyframes App-logo-spin {
