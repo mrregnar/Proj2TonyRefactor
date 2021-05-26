@@ -59,7 +59,6 @@ function AddUser() {
             name="email"
             placeholder="email"
             value={user.email}
-            // type="text"
           ></input>
           <label htmlFor="email">Email</label>
         </div>
@@ -70,7 +69,6 @@ function AddUser() {
             name="password"
             placeholder="password"
             value={user.password}
-            // type="text"
           ></input>
           <label htmlFor="password">Password</label>
         </div>

@@ -40,7 +40,7 @@ function LoginUser() {
           <input type="password" name="" required=""></input>
           <label>Password</label>
         </div>
-        <a href="/home">
+        <a href="/">
           <span></span>
           <span></span>
           <span></span>

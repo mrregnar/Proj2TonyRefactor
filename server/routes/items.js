@@ -14,6 +14,16 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:id", async (req, res) => {
+  try {
+    console.log("Item.js get '/' can you speak to the DB?");
+    const items = await Item.findById(request.params.Item);
+    res.json(items);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 router.post("/", async (req, res) => {
   console.log("trying to post...");
   const item = new Item({

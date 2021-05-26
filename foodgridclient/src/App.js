@@ -30,10 +30,10 @@ function App() {
             Sign Up
           </Link>
           <Link to="/listitems" style={{ margin: 10 }}>
-            ListItems
+            List Items
           </Link>
           <Link to="/additem" style={{ margin: 10 }}>
-            AddItem
+            Add Item
           </Link>
         </div>
         <Switch>
