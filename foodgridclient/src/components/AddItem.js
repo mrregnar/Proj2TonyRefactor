@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+
 //import "./AddItem.css";
 
 function AddItem() {
@@ -28,6 +29,7 @@ function AddItem() {
     }
     axios.post('/items', newItem) //put new item here
   }
+
   return (
     <div class='AddItem-box'>
       <h2>Add Item</h2>
@@ -62,13 +64,7 @@ function AddItem() {
             type='number'
           ></input>
         </div>
-        <a onClick={addItem}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Submit
-        </a>
+        <button onClick={addItem}>Submit</button>
       </form>
     </div>
   )
